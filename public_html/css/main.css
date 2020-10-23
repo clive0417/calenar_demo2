@@ -1,0 +1,130 @@
+
+#calendar {
+    margin:0 auto;
+    width: 90%;
+}
+
+#headr {
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.day , .date-block {
+    float:left;
+    width: calc(100% / 7);
+}
+#dates {
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+
+}
+
+.date-block {
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+    height: 15vh;
+    padding: 4px;
+    overflow: auto;
+}
+
+.date-block.empty {
+    background-color: gray;
+}
+
+/*info-panel*/
+#info-panel  {
+    display: none;
+    position: fixed;
+    background-color:white;
+    border:1px solid #CCC;
+    width: 280px;
+    
+}
+
+#info-panel.open {
+	display: block;
+}
+
+#info-panel .close {
+    right: 10px;
+    top: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+#info-panel label {
+    color:#ccc;
+    font-size:0.8rem;
+
+}
+#info-panel .title, #info-panel .time-picker {
+    border-bottom:1px solid #CCC;
+}
+
+#info-panel .title, #info-panel .time-picker, #info-panel .description {
+    padding:10px;
+}
+
+.select-date {
+    text-align:center;
+    font-size: 1.4rem;
+}
+#description {
+    width: 100%;
+}
+
+#info-panel button{
+    display:none;
+    border: none;
+	padding: 10px;
+  color: white;
+	cursor: pointer;
+
+}
+
+#info-panel.new button.create, #info-panel.new button.cancel {
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+#info-panel.update button.update, #info-panel.update button.cancel, #info-panel.update button.delete {
+	float: left;
+	display: block;
+	width: 50%;
+}
+
+#info-panel button.create, #info-panel button.update {
+	background: #74be00;
+}
+
+#info-panel.update button.delete {
+	width: 100%;
+	background-color: #c21717;
+}
+
+#info-panel .error-msg {
+    display:none;
+}
+
+#info-panel .error-msg.open {
+	display: block;
+}
+
+/* event 介面設定*/
+.event {
+    margin-bottom: 2px;
+	border-radius: 12px;
+	padding: 0 6px;
+	background: orange;
+    color: white;
+    margin-bottom: 2px;
+}
+.event .title {
+    float: left;
+
+}
+.event .from {
+    float: right;
+}
+
